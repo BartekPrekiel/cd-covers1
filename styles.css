@@ -1,0 +1,75 @@
+img {
+    width: 600px;
+
+}
+
+#wrapper {
+    width: 35%;
+    margin: auto;
+}
+
+#wrapper img {
+    margin-bottom: 30px;
+    border: 4px white solid;
+}
+
+#drake img:hover {
+
+}
+
+
+body {
+    background-image: url("tumblr_n9l2xnMSi81sjwwzso1_500.gif");
+    background-size: contain;
+    background-position: center;
+    font-family:Helvetica;
+    color:rgba(255,255,255,.85);
+    font-weight: 900;
+}
+
+/* The animation code */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+}
+
+/* The element to apply the animation to */
+#vierkant {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+}
+
+#vierkant:hover {
+
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.text {
+    position: relative;
+    bottom:600px;
+    left:4px;
+    visibility:hidden;
+    width: 600px;
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#drake:hover .text {
+    visibility:visible;
+}
+
+
+#vierkant .text {
+    bottom:30px;
+    left:0px;
+    visibility:hidden;
+}
+
+#vierkant:hover .text {
+    visibility:visible;
+}
+
