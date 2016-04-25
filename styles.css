@@ -1,8 +1,12 @@
 img {
-    width: 600px;
+    width: 700px;
 
 }
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 #wrapper {
     width: 35%;
     margin: auto;
@@ -13,18 +17,23 @@ img {
     border: 4px white solid;
 }
 
-#drake img:hover {
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 
-
+#wrapper img {
+    box-shadow: 10px 10px 5px #888888;
+}
 body {
     background-image: url("tumblr_n9l2xnMSi81sjwwzso1_500.gif");
     background-size: contain;
     background-position: center;
-    font-family:Helvetica;
+    font-family: lmao;
     color:rgba(255,255,255,.85);
     font-weight: 900;
+
 }
 
 /* The animation code */
@@ -49,17 +58,26 @@ body {
 }
 
 .text {
+    padding: 30px;
     position: relative;
-    bottom:600px;
+    bottom:666px;
     left:4px;
     visibility:hidden;
-    width: 600px;
+    width: 640px;
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(0, 0, 0, 0.7);
+
+
 }
 
 #drake:hover .text {
     visibility:visible;
+
+}
+
+#illmatic:hover .text {
+    visibility: visible;
+
 }
 
 
@@ -73,3 +91,93 @@ body {
     visibility:visible;
 }
 
+
+
+#wrapper:hover .text{
+    animation: fadein 2s;
+
+}
+
+.text p{
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(WithMyWoes.ttf);
+}
+
+@font-face{
+    font-family: lmao;
+    src: url(eurof55.ttf);
+}
+
+
+#drake {
+    margin-top: 150px;
+}
+
+#drake h1{
+    font-family: myFirstFont;
+
+}
+
+#drake p{
+    font-size: 23px;
+}
+
+#illmatic p{
+    font-size: 23px;
+}
+
+#wu p{
+    font-size: 23px;
+}
+
+#gambino p{
+    font-size: 23px;
+}
+
+#greenday p{
+    font-size: 23px;
+}
+
+
+
+#drake img:hover{
+    background-image: url("");
+}
+
+#greenday:hover .text{
+    visibility: visible;
+    
+}
+
+#wu:hover .text{
+    visibility: visible;
+}
+
+#gambino:hover .text{
+    visibility: visible;
+}
+
+#gambino:hover img{
+    box-shadow: 10px 10px 5px blue;
+}
+
+#greenday:hover img{
+    box-shadow: 10px 10px 5px blue;
+}
+
+#wu:hover img{
+    box-shadow: 10px 10px 5px blue;
+}
+
+#drake:hover img{
+    box-shadow: 10px 10px 5px blue;
+
+}
+
+#illmatic:hover img{
+    box-shadow: 10px 10px 5px blue;
+}
